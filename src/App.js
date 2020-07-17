@@ -18,10 +18,11 @@ function App() {
       <Router>
         <AuthContextProvider>
             <Navigation />
-            <Container className="mt-4">
+            <Container fluid={true} className="mt-4">
               <Switch>
                 { Routes }
               </Switch>
+              <div className="imagen"></div>
             </Container>
             <Footer />
         </AuthContextProvider>

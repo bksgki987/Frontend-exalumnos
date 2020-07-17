@@ -3,9 +3,9 @@ import decode from 'jwt-decode';
 
 export const AuthContext = createContext();
 
-const AuthContextProvider = (props) => {  
-  const [isAuth, setIsAuth] = useState(false);
+const AuthContextProvider = (props) => {
   const [user, setUser] = useState(null);
+  const [isAuth, setIsAuth] = useState(false);
 
   const loginUser = (token) => {
     localStorage.setItem('maui_token', token);
@@ -30,10 +30,10 @@ const AuthContextProvider = (props) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ 
+    <AuthContext.Provider value={{
       isAuth, user, loginUser, logoutUser,
-     }}>
-      { props.children }
+    }}>
+      {props.children}
     </AuthContext.Provider>
   )
 };

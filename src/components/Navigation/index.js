@@ -27,13 +27,12 @@ const Navigation = () => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
-
           <NavItem>
-            <NavLink tag={Link} to="/signup">Signup</NavLink>
+            <NavLink tag={Link} to="/login">Login</NavLink>
           </NavItem>
 
           <NavItem>
-            <NavLink tag={Link} to="/login">Login</NavLink>
+            <NavLink tag={Link} to="/signup">Signup</NavLink>
           </NavItem>
 
         </Nav>

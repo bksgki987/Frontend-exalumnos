@@ -1,18 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import Portada from '../Pictures/Portada.png';
-import './index.css';
+
+
 
 const Home = () => {
   return (
+    <React.Fragment>
 
-
-  <div class="Portada">
- 
-  <img src={Portada}/>
-      
-    </div>
+      <h1 className="text-center">Universidad Anáhuac<u></u></h1>
+      <h2 className="text-center">vience in bono malum</h2>
+    </React.Fragment>
   );
 }
- 
+
 export default Home;

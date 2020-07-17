@@ -17,7 +17,7 @@ const Signup = () => {
   const [ocupation, setOcupation] = useState("");
   const [companyname, setCompanyName] = useState("");
   const [currentposition, setCurrentPosition] = useState("");
-  const [telephon, setTelephon] = useState("");
+  const [telephone, setTelephone] = useState("");
   const [placewherelive, setPlaceWhereLive] = useState("");
   const [password, setPassword] = useState("");
 
@@ -32,7 +32,7 @@ const Signup = () => {
       ocupation,
       companyname,
       currentposition,
-      telephon,
+      telephone,
       placewherelive,
       password,
 
@@ -48,7 +48,7 @@ const Signup = () => {
       setOcupation('');
       setCompanyName('');
       setCurrentPosition('');
-      setTelephon('');
+      setTelephone('');
       setPlaceWhereLive('');
       setPassword('');
       alert('Successful signup!');
@@ -142,10 +142,10 @@ const Signup = () => {
             placeholder="what is your current position" />
         </FormGroup>
         <FormGroup>
-          <Label>Telephon</Label>
+          <Label>telephone</Label>
           <Input
-            value={telephon}
-            onChange={(e) => setTelephon(e.target.value)}
+            value={telephone}
+            onChange={(e) => setTelephone(e.target.value)}
             type="telephon"
             name="telephon"
             id="telephon"
